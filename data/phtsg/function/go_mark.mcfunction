@@ -1,0 +1,2 @@
+$execute positioned as @e[type=minecraft:item_display,limit=1,nbt={Tags:["$(0)","$(1)","$(2)","$(3)"]}] run teleport @s ~ ~-1.3 ~
+$kill @e[type=minecraft:item_display,nbt={Tags:["$(0)","$(1)","$(2)","$(3)"]}]

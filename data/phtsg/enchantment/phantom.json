@@ -1,0 +1,39 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "phtsg.enchantment.phantom",
+    "fallback": "Phantom"
+  },
+  "effects": {
+    "hit_block": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "phtsg:hit"
+        }
+      }
+    ],
+    "tick": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "phtsg:tick"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:spyglass",
+  "weight": 2
+}

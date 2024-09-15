@@ -1,0 +1,1 @@
+$summon minecraft:item_display ~ ~1.5 ~ {item:{id:"minecraft:purple_concrete"},Air:404s,Tags:["$(0)","$(1)","$(2)","$(3)"]}
