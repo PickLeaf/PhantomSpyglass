@@ -3,8 +3,6 @@ execute unless entity @s[tag=phtsg_on] run return fail
 data modify storage phtsg fail set value 1b
 data modify storage phtsg owner set from entity @s UUID
 
-execute if score @s recover_phtsg_trigger matches 0.. \
-run data modify storage phtsg fail set value 0b
 execute at @s anchored eyes positioned ^ ^ ^ \
 as @e[type=minecraft:item_display,distance=..1] \
 run function phtsg:check_nearby_mark with storage phtsg {}
