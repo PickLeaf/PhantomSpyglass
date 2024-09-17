@@ -1,2 +1,0 @@
-scoreboard objectives remove recover_phtsg_trigger
-scoreboard objectives remove counter_phtsg_trigger
