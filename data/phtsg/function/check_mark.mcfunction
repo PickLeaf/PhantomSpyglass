@@ -1,6 +1,5 @@
-data modify storage phtsg owner.0 set from entity @s UUID[0]
-data modify storage phtsg owner.1 set from entity @s UUID[1]
-data modify storage phtsg owner.2 set from entity @s UUID[2]
-data modify storage phtsg owner.3 set from entity @s UUID[3]
-execute at @s run function phtsg:check_mark_ with storage phtsg owner
-data remove storage phtsg owner
+$execute if entity @e[type=item_display,nbt={item:{components:{"minecraft:custom_data":{owner:$(owner)}}}}] \
+run return run function phtsg:recover
+title @s title {"text":"!","color":"dark_red"}
+scoreboard players set @s recover_phtsg_trigger -1
+scoreboard players enable @a recover_phtsg_trigger
