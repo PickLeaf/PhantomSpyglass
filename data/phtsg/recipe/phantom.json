@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+    {
+      "item": "book"
+    },
+    {
+      "item": "phantom_membrane"
+    },
+    {
+      "item": "ender_pearl"
+    }
+  ],
+	"result": {
+		"id": "minecraft:enchanted_book",
+		"components": {
+			"stored_enchantments": {
+        "phtsg:phantom": 1
+      }
+		}
+	}
+}
